@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+
+    <header class="search-section">
+      <form class="search-form" autocomplete="off">
+        <input 
+          type="text" 
+          id="cityInput" 
+          class="search-input" 
+          placeholder="Enter city name..." />
+        <button type="submit" class="search-btn" aria-label="Search City">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </header>
+    <section class="weather-display">
+      <h2 class="city-name"></h2>
+      <p class="date-time"></p>
+
+      <div class="main-weather">
+        <div class="weather-status">
+          <span class="forecast-text"></span>
+          <div class="forecast-icon"></div>
+        </div>
+        <p class="temperature"></p>
+      </div>
+
+      <div class="temperature-range">
+        <p class="min-temp"></p>
+        <p class="max-temp"></p>
+      </div>
+    </section>
+    <section class="extra-info">
+      <div class="info-card">
+        <i class="fa-solid fa-temperature-low"></i>
+        <div>
+          <p>Feels Like</p>
+          <p class="feels-like-value">--°</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-droplet"></i>
+        <div>
+          <p>Humidity</p>
+          <p class="humidity-value">--%</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-wind"></i>
+        <div>
+          <p>Wind</p>
+          <p class="wind-value">-- km/h</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <i class="fa-solid fa-gauge"></i>
+        <div>
+          <p>Pressure</p>
+          <p class="pressure-value">-- hPa</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
