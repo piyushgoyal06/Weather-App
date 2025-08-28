@@ -22,3 +22,6 @@ A simple and responsive **Weather Application** built with **HTML, CSS, and Java
 - ├── index.html # Main HTML file
 - ├── style.css # Stylesheet
 - ├── script.js # JavaScript logic (API + DOM updates)
+
+## 🔗 Live Demo
+👉 [Click here to try the Weather App](https://weather-app-piyushgoyal06.vercel.app/)
